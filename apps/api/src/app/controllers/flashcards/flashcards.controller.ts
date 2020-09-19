@@ -1,10 +1,18 @@
-import { Controller, Get, Post, Put, Delete, Body, Param, Header } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Put,
+  Delete,
+  Body,
+  Param,
+  Header,
+} from '@nestjs/common';
 import { FlashCardsService } from '../../services/flashcards/flashcards.service';
 import { FlashCardDto } from '../../models/flashcard.model';
 
 @Controller('FlashCards')
 export class FlashCardsController {
-
   constructor(private service: FlashCardsService) {}
 
   @Get()
