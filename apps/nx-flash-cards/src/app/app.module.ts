@@ -1,30 +1,31 @@
-import { BrowserModule } from '@angular/platform-browser'
-import { FormsModule } from '@angular/forms'
+// import { BrowserModule } from '@angular/platform-browser'
+// import { FormsModule } from '@angular/forms'
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import { NgModule } from '@angular/core'
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { FlashcardsModule } from './components/flashcards/flashcards.module';
 
 import { AppComponent } from './app.component'
 import { TopMenuBarComponent } from './components/top-menu-bar/top-menu-bar.component'
-import { CarouselComponent } from './components/carousel/carousel.component'
-
-import { MenubarModule } from 'primeng/menubar'
-import { InputTextModule } from 'primeng/inputtext'
-import { ButtonModule } from 'primeng/button'
-import { ToastModule } from 'primeng/toast'
-import { CarouselModule } from 'primeng/carousel'
+import { CarouselComponent } from './components/flashcards/flashcards-carousel/carousel.component'
+import { FlashcardsCreateComponent } from './components/flashcards/create/flashcards-create.component'
+import { FlashcardsViewComponent } from './components/flashcards/flashcards-view/flashcards-view.component'
+import { FlashcardsComponent } from './components/flashcards/flashcards.component'
 
 @NgModule({
   imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    MenubarModule,
-    InputTextModule,
-    ButtonModule,
-    ToastModule,
-    FormsModule,
-    CarouselModule,
+    // BrowserModule,
+    // BrowserAnimationsModule,
+    // FormsModule,
+    FlashcardsModule
   ],
-  declarations: [AppComponent, TopMenuBarComponent, CarouselComponent],
+  declarations: [
+    AppComponent,
+    TopMenuBarComponent,
+    CarouselComponent,
+    FlashcardsCreateComponent,
+    FlashcardsViewComponent,
+    FlashcardsComponent
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

@@ -4,5 +4,7 @@
     "outDir": "../../dist/out-tsc",
     "types": []
   },
+  "enableIvy": false,
+  "experimentalDecorators": true,
   "files": ["src/main.ts", "src/polyfills.ts"]
 }

@@ -4,7 +4,7 @@ import { MenuItem } from 'primeng/api'
 @Component({
   selector: 'flash-cards-game-top-menu-bar',
   templateUrl: './top-menu-bar.component.html',
-  styleUrls: ['./top-menu-bar.component.scss'],
+  styleUrls: ['./top-menu-bar.component.css'],
 })
 export class TopMenuBarComponent implements OnInit {
   constructor() {}

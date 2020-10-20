@@ -5,3 +5,9 @@ export class FlashCard {
   category: string;
   author: string;
 }
+
+export interface CardCategory {
+  name: string;
+  category: string;
+  totalQuestions: number;
+}
